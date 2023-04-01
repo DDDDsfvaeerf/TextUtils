@@ -4,6 +4,7 @@ import Alert from "./components/Alert";
 import Navbar from "./components/Navbar";
 import TextForm from "./components/TextForm";
 import {
+  HashRouter,
   BrowserRouter as Router,
   // Switch,
   Route,
@@ -43,7 +44,7 @@ function App() {
 
   return (
     <>
-    <Router>
+    <HashRouter>
 
       <Navbar title="TextUtils" about = "About" mode={mode} toggleMode={toggleMode}/>
       <Alert alert={alert}/>
@@ -54,7 +55,7 @@ function App() {
         </Routes>
       </div>
 
-      </Router>
+      </HashRouter>
 
     </>  
   );
